@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./paymentPage.css">
+    <title>Página de Pago</title>
+</head>
+
+<body>
+    <section class="payment-section">
+        <h2>Opciones de Pago</h2>
+        <div class="payment-options">
+            <div class="payment-option">
+                <h3>Transferencia Bancaria</h3>
+                <p>Por favor, realice la transferencia a la siguiente cuenta bancaria:</p>
+                <p><strong>Banco:</strong> Banco Garca</p>
+                <p><strong>Cuenta:</strong> Juancito Diaz</p>
+                <p><strong>CBU:</strong> 00005438321412343123</p>
+            </div>
+            <div class="payment-option">
+                <h3>Pago con Tarjeta</h3>
+                <form id="card-payment-form">
+                    <div class="form-group">
+                        <label for="card-name">Nombre en la Tarjeta</label>
+                        <input type="text" id="card-name" name="card-name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-number">Número de Tarjeta</label>
+                        <input type="text" id="card-number" name="card-number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-expiry">Fecha de Expiración</label>
+                        <input type="text" id="card-expiry" name="card-expiry" placeholder="MM/AA" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-cvc">CVC</label>
+                        <input type="text" id="card-cvc" name="card-cvc" required>
+                    </div>
+                    <button type="submit" class="submit-button">Pagar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

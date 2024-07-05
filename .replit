@@ -1,0 +1,23 @@
+run = "node index.js"
+entrypoint = "./public/index.html"
+hidden = [".config"]
+modules = [
+  "nodejs-20",
+  "web:v2-20230623-0b7a606",
+  "nodejs-19",
+  "nodejs-18",
+  "nodejs-14",
+  "nodejs-with-prybar-18",
+]
+
+[nix]
+channel = "stable-23_11"
+
+[deployment]
+publicDir = "./public/"
+deploymentTarget = "static"
+
+
+[[ports]]
+localPort = 3000
+externalPort = 80

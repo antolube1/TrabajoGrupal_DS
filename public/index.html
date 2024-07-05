@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>BuyCar</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="user.css" rel="stylesheet" type="text/css" />
+</head>
+
+
+<!--  Header ---------------------      -->
+
+<body>
+  <header>
+    <div class="barra-principal">
+      <img id="logo" src="img/logo.png">
+    </div>
+    <h1 id="titulo">-Los Gitanos-</h1>
+    <!-- <section id="cart">
+      <a href="./cart.html" id="url-cart">
+        <img src="./img/cart.png" alt="Carrito" class="img-cart">
+      </a>
+    </section> Descomentar al utilizar el servidor--> 
+    <section id="cart" ><!-- Al utilizar Servidor agregarle onclick="reload()" al section id="cart" -->
+      <div class="container-icon">
+        <div class="container-cart-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="icon-cart">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+          </svg>
+          <div class="count-products">
+            <span id="contador-productos">0</span>
+          </div>
+        </div>
+  
+        <div class="container-cart-products hidden-cart">
+          <div class="row-product hidden">
+            <div class="cart-product">
+            </div>
+          </div>
+          <div class="payment-button">
+            <a href="./cart.html">Pagar</a>
+            <div class="cart-total hidden">
+              <h3>Total:</h3>
+              <span class="total-pagar">0</span>
+            </div>
+            <p class="cart-empty">El carrito está vacío</p>
+          </div>
+        </div>
+      </div>
+      <button id="gestion-user" onclick="user()">
+          <img src="./img/user.png" alt="Usuario" class="img-cart">
+      </button>
+      <div id="open-user">
+        <a class='login-btn' href="./manageOrder.html" id="btn1">Gestionar pedido</a>
+        <a class="login-btn" href="./login.html">Iniciar Sesion</a>
+      </div>
+    </section>
+  </header>
+  <main>
+  <!-- Banner -->
+  </main><br>
+  <h2 id="tit-auto">Automotores</h2>
+  <div class="container-items">
+		<div class="item">
+			<figure>
+				<img src="./img/bmwz4.jpg" alt="producto" class="img-prod"/>
+			</figure>
+			<div class="info-product">
+				<h2>BMW Z4</h2>
+				<p class="price">$300000</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+		<div class="item">
+			<figure>
+				<img src="./img/huracan.jpg" alt="producto" class="img-prod"/>
+			</figure>
+			<div class="info-product">
+				<h2>Porsche Huracan</h2>
+				<p class="price">$980000</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+		<div class="item">
+			<figure>
+				<img src="./img/porsche911.jpg" alt="producto" class="img-prod"/>
+			</figure>
+			<div class="info-product">
+				<h2>Porsche 911</h2>
+				<p class="price">$550000</p>
+				<button class="btn-add-cart">Añadir al carrito</button>
+			</div>
+		</div>
+	</div><br>
+    <section class="autopartes">
+		<div>
+			<h1>Auto Partes</h1>
+		</div>
+		<div class="container-items">
+			<div class="item">
+				<figure>
+					<img src="./img/freno.jfif" alt="producto" class="img-prod"/>
+				</figure>
+				<div class="info-product">
+					<h2>Freno</h2>
+					<p class="price">$90</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img src="./img/Motor.jpg" alt="producto" class="img-prod"/>
+				</figure>
+				<div class="info-product">
+					<h2>Motor</h2>
+					<p class="price">$50</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+			<div class="item">
+				<figure>
+					<img src="./img/llanta.jpg" alt="producto" class="img-prod"/>
+				</figure>
+				<div class="info-product">
+					<h2>Llanta</h2>
+					<p class="price">$80</p>
+					<button class="btn-add-cart">Añadir al carrito</button>
+				</div>
+			</div>
+	</section><br>
+  <section id="automotores">
+  </section><br>
+  <!--  Footer  ---------------------      -->
+  <footer>
+    <div>
+      <h2>Contacto </h2>
+      <p> Teléfono: +54 9 11 6789-4567 </p>
+      <p> Correo: los.Gitanos@example.com </p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
